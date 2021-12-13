@@ -1,0 +1,8 @@
+autoconf
+libtoolize
+automake
+./configure --prefix=°²×°Â·¾¶
+make
+make install
+
+./configure --prefix=/home/ufc/opt/ufc --with-ssl=/home/ufc/opt/openssl --with-gmp=/home/ufc/opt/gmp --enable-oracle=yes --enable-db2=yes --enable-imq=yes --enable-tools=yes --enable-shared=yes --enable-static=no

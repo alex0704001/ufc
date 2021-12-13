@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function renamelib()
+{
+	libdir=$1
+	libname=$2
+	version=$3
+
+	echo ${libdir} ${libname} ${version}
+	cd ${libdir} 
+	mv -vf lib${libname}.so.${version} ${libname}.so.${version}
+	rm -f lib${libname}.*
+	ln -sf ${libname}.so.${version} ${libname}.so
+}
+
+renamelib $1 $2 $3
